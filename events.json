@@ -4,6 +4,7 @@
     "title": "Campus Hackathon 2026",
     "date": "2026-11-15",
     "seats": 0,
+    "free": true,
     "online": false,
     "description": "Participate in a campus hackathon and demonstrate your coding, teamwork and problem-solving skills."
   },
@@ -12,6 +13,7 @@
     "title": "Artificial Intelligence Workshop",
     "date": "2026-11-18",
     "seats": 3,
+    "free": true,
     "online": true,
     "description": "Explore artificial intelligence, machine learning fundamentals and real-world AI applications."
   },
@@ -20,6 +22,7 @@
     "title": "Web Development Bootcamp",
     "date": "2026-11-22",
     "seats": 15,
+    "free": true,
     "online": false,
     "description": "Learn HTML, CSS, JavaScript and modern techniques for building responsive websites."
   },
@@ -28,6 +31,7 @@
     "title": "Cybersecurity Awareness Workshop",
     "date": "2026-11-28",
     "seats": 4,
+    "free": true,
     "online": true,
     "description": "Understand cybersecurity fundamentals, network security and safe internet practices."
   }

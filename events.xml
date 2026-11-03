@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<events>
+
+    <!-- Event 1 -->
+    <event id="1">
+        <title>Campus Hackathon 2026</title>
+        <date>2026-11-15</date>
+        <seats>0</seats>
+        <free>true</free>
+        <online>false</online>
+        <description>
+            Participate in a campus hackathon and demonstrate your coding,
+            teamwork and problem-solving skills.
+        </description>
+    </event>
+
+    <!-- Event 2 -->
+    <event id="2">
+        <title>Artificial Intelligence Workshop</title>
+        <date>2026-11-18</date>
+        <seats>3</seats>
+        <free>true</free>
+        <online>true</online>
+        <description>
+            Explore artificial intelligence, machine learning fundamentals
+            and real-world AI applications.
+        </description>
+    </event>
+
+    <!-- Event 3 -->
+    <event id="3">
+        <title>Web Development Bootcamp</title>
+        <date>2026-11-22</date>
+        <seats>15</seats>
+        <free>true</free>
+        <online>false</online>
+        <description>
+            Learn HTML, CSS, JavaScript and modern techniques for
+            building responsive websites.
+        </description>
+    </event>
+
+    <!-- Event 4 -->
+    <event id="4">
+        <title>Cybersecurity Awareness Workshop</title>
+        <date>2026-11-28</date>
+        <seats>4</seats>
+        <free>true</free>
+        <online>true</online>
+        <description>
+            Understand cybersecurity fundamentals, network security
+            and safe internet practices.
+        </description>
+    </event>
+
+</events>

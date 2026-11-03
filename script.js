@@ -182,13 +182,42 @@ async function loadEvents() {
 
     console.log("Fetched Events:", events);
 
+    // B2: Accessing JSON data using array index and dot notation
+    console.log("First Event Title:", events[0].title);
+
+    console.log(
+      "Last Event Seats:",
+      events[events.length - 1].seats
+    );
+
     renderEvents(events);
+
   } catch (error) {
     console.error("Fetch Error:", error);
 
     eventGrid.textContent =
       "Sorry! We couldn't load the events. Please try again later.";
   }
+
+  // B3: JSON Round-trip (Object -> Text -> Object)
+
+// Convert JavaScript array into JSON string
+const jsonString = JSON.stringify(events, null, 2);
+
+console.log("JSON String:");
+console.log(jsonString);
+
+// Convert JSON string back into JavaScript array
+const convertedEvents = JSON.parse(jsonString);
+
+console.log("Converted Array:", convertedEvents);
+
+// Check whether both arrays contain the same data
+console.log(
+    "Round-trip successful:",
+    JSON.stringify(events) === JSON.stringify(convertedEvents)
+);
+
 }
 
 if (eventGrid) {
@@ -262,3 +291,115 @@ if (eventSearchInput) {
     }
   });
 }
+
+async function loadXMLData() {
+
+    const xmlTitleElement = document.querySelector("#xml-first-title");
+
+    if (!xmlTitleElement) {
+        return;
+    }
+
+    try {
+
+        // Fetch XML file from the root folder
+        const response = await fetch("../events.xml");
+
+        if (!response.ok) {
+            throw new Error("XML file could not be loaded");
+        }
+
+        // Read XML as text
+        const xmlText = await response.text();
+
+        // Convert XML text into an XML document
+        const parser = new DOMParser();
+
+        const xmlDocument = parser.parseFromString(
+            xmlText,
+            "application/xml"
+        );
+
+        // Check for XML parsing errors
+        if (xmlDocument.querySelector("parsererror")) {
+            throw new Error("Invalid XML format");
+        }
+
+        // Read all title elements
+        const titles = xmlDocument.getElementsByTagName("title");
+
+        // Display first event title
+        if (titles.length > 0) {
+
+            xmlTitleElement.textContent = titles[0].textContent.trim();
+
+            console.log(
+                "First XML Event Title:",
+                titles[0].textContent.trim()
+            );
+
+        }
+
+    } catch (error) {
+
+        xmlTitleElement.textContent = "Unable to load XML data.";
+
+        console.error("XML Error:", error);
+
+    }
+
+}
+
+// Execute XML loading
+loadXMLData();
+
+
+// B5: COMPARE JSON AND XML FILE SIZES
+
+async function compareFileSizes() {
+
+    try {
+
+        // Fetch both files
+        const jsonResponse = await fetch("../events.json");
+        const xmlResponse = await fetch("../events.xml");
+
+        if (!jsonResponse.ok || !xmlResponse.ok) {
+            throw new Error("Unable to read both files");
+        }
+
+        // Read both files as text
+        const jsonText = await jsonResponse.text();
+        const xmlText = await xmlResponse.text();
+
+        // Calculate actual UTF-8 byte sizes
+        const jsonSize = new Blob([jsonText]).size;
+        const xmlSize = new Blob([xmlText]).size;
+
+        console.log("JSON File Size:", jsonSize, "bytes");
+        console.log("XML File Size:", xmlSize, "bytes");
+
+        if (jsonSize > xmlSize) {
+
+            console.log("JSON is larger than XML.");
+
+        } else if (xmlSize > jsonSize) {
+
+            console.log("XML is larger than JSON.");
+
+        } else {
+
+            console.log("Both files have equal sizes.");
+
+        }
+
+    } catch (error) {
+
+        console.error("File Size Error:", error);
+
+    }
+
+}
+
+// Execute file size comparison
+compareFileSizes();
