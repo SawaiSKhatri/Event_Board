@@ -172,7 +172,7 @@ async function loadEvents() {
   try {
     eventGrid.textContent = "Loading events...";
 
-    const response = await fetch("../events.json");
+    const response = await fetch("./scripts/events.json");
 
     if (!response.ok) {
       throw new Error("Unable to load event data.");
