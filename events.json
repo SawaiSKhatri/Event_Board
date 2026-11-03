@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Campus Hackathon 2026",
+    "date": "2026-11-15",
+    "seats": 0,
+    "online": false,
+    "description": "Participate in a campus hackathon and demonstrate your coding, teamwork and problem-solving skills."
+  },
+  {
+    "id": 2,
+    "title": "Artificial Intelligence Workshop",
+    "date": "2026-11-18",
+    "seats": 3,
+    "online": true,
+    "description": "Explore artificial intelligence, machine learning fundamentals and real-world AI applications."
+  },
+  {
+    "id": 3,
+    "title": "Web Development Bootcamp",
+    "date": "2026-11-22",
+    "seats": 15,
+    "online": false,
+    "description": "Learn HTML, CSS, JavaScript and modern techniques for building responsive websites."
+  },
+  {
+    "id": 4,
+    "title": "Cybersecurity Awareness Workshop",
+    "date": "2026-11-28",
+    "seats": 4,
+    "online": true,
+    "description": "Understand cybersecurity fundamentals, network security and safe internet practices."
+  }
+]

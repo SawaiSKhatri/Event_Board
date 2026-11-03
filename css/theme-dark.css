@@ -1,0 +1,20 @@
+/* black-them.css: High-Contrast Immersive Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #09090b;
+    --surface-alt: #121216;
+    --surface-glass: rgba(18, 18, 22, 0.85);
+    
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    
+    --border: #27272a;
+    --border-focus: #fb923c;
+    
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.5);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.5);
+    --shadow-glow: 0 0 25px -2px rgb(249 115 22 / 0.2);
+  }
+}
