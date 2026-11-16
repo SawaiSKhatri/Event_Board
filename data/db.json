@@ -1,0 +1,115 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Campus Hackathon 2026",
+      "date": "2026-11-15",
+      "seats": 0,
+      "free": true,
+      "online": false,
+      "category": "Technology",
+      "location": "IIIT Vadodara Campus",
+      "description": "Participate in a campus hackathon and demonstrate your coding, teamwork and problem-solving skills.",
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "title": "Artificial Intelligence Workshop",
+      "date": "2026-11-18",
+      "seats": 2,
+      "free": true,
+      "online": true,
+      "category": "AI & Machine Learning",
+      "location": "Online",
+      "description": "Explore artificial intelligence, machine learning fundamentals and real-world AI applications.",
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "title": "Web Development Bootcamp",
+      "date": "2026-11-22",
+      "seats": 15,
+      "free": true,
+      "online": false,
+      "category": "Technology",
+      "location": "IIIT Vadodara Campus",
+      "description": "Learn HTML, CSS, JavaScript and modern techniques for building responsive websites.",
+      "status": "approved"
+    },
+    {
+      "id": 4,
+      "title": "Cybersecurity Awareness Workshop",
+      "date": "2026-11-28",
+      "seats": 4,
+      "free": true,
+      "online": true,
+      "category": "Cybersecurity",
+      "location": "Online",
+      "description": "Understand cybersecurity fundamentals, network security and safe internet practices.",
+      "status": "approved"
+    },
+    {
+      "id": 5,
+      "title": "Data Science Seminar",
+      "date": "2026-12-05",
+      "seats": 0,
+      "free": true,
+      "online": false,
+      "category": "AI & Machine Learning",
+      "location": "IIIT Vadodara Campus",
+      "description": "Discover data science techniques, data analysis, visualization and real-world applications.",
+      "status": "approved"
+    },
+    {
+      "id": 6,
+      "title": "annual",
+      "date": "2026-12-31",
+      "seats": 500,
+      "free": true,
+      "online": false,
+      "category": "Cultural",
+      "location": "block 9",
+      "description": "Any branch student can join",
+      "status": "approved"
+    }
+  ],
+  "registrations": [
+    {
+      "id": 1,
+      "eventId": 2,
+      "eventTitle": "Artificial Intelligence Workshop",
+      "name": "hii",
+      "email": "khatrisawai0@gmail.com",
+      "registeredAt": "2026-11-16T18:33:51.199Z"
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": 1,
+      "eventId": 6,
+      "email": "khatrisawai0@gmail.com",
+      "createdAt": "2026-11-16T18:31:10.140Z"
+    },
+    {
+      "id": 2,
+      "eventId": 2,
+      "email": "demo@gmail.com",
+      "createdAt": "2026-11-16T18:31:46.578Z"
+    }
+  ],
+  "proposals": [
+    {
+      "id": 1,
+      "title": "annual",
+      "date": "2026-12-31",
+      "location": "block 9",
+      "category": "Cultural",
+      "seats": 500,
+      "online": false,
+      "free": true,
+      "description": "Any branch student can join",
+      "status": "approved",
+      "submittedAt": "2026-11-16T18:30:44.479Z"
+    }
+  ]
+}

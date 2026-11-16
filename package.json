@@ -1,0 +1,21 @@
+{
+  "name": "iiit-vadodara-event-board",
+  "version": "1.0.0",
+  "description": "Campus Event Management System for IIIT Vadodara",
+  "main": "js/server.js",
+  "scripts": {
+    "start": "node js/server.js",
+    "dev": "node --watch js/server.js"
+  },
+  "keywords": [
+    "IIIT Vadodara",
+    "Event Board",
+    "Campus Events",
+    "Event Management"
+  ],
+  "author": "Sawai Khatri",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

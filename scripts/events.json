@@ -34,5 +34,14 @@
     "free": true,
     "online": true,
     "description": "Understand cybersecurity fundamentals, network security and safe internet practices."
+  },
+  {
+    "id": 5,
+    "title": "Data Science Seminar",
+    "date": "2026-12-05",
+    "seats": 0,
+    "free": true,
+    "online": false,
+    "description": "Discover data science techniques, data analysis, visualization and real-world applications."
   }
 ]
